@@ -1,0 +1,121 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:viewportWidth="600"
+    android:viewportHeight="100"
+    android:width="600dp"
+    android:height="100dp">
+    <path
+        android:pathData="M0 0H600V100H0V0Z"
+        android:fillColor="#E5FFFF" />
+    <path
+        android:pathData="M50 0A50 50 0 0 1 -50 0A50 50 0 0 1 50 0Z"
+        android:fillColor="#C5FBEC"
+        android:strokeMiterLimit="10" />
+    <path
+        android:pathData="M150 0A50 50 0 0 1 50 0A50 50 0 0 1 150 0Z"
+        android:fillColor="#CEFFE1"
+        android:strokeMiterLimit="10" />
+    <path
+        android:pathData="M250 0A50 50 0 0 1 150 0A50 50 0 0 1 250 0Z"
+        android:fillColor="#D5FDFF"
+        android:strokeMiterLimit="10" />
+    <path
+        android:pathData="M350 0A50 50 0 0 1 250 0A50 50 0 0 1 350 0Z"
+        android:fillColor="#CAF2FF"
+        android:strokeMiterLimit="10" />
+    <path
+        android:pathData="M450 0A50 50 0 0 1 350 0A50 50 0 0 1 450 0Z"
+        android:fillColor="#A7DAFF"
+        android:strokeMiterLimit="10" />
+    <path
+        android:pathData="M550 0A50 50 0 0 1 450 0A50 50 0 0 1 550 0Z"
+        android:fillColor="#B8EFFF"
+        android:strokeMiterLimit="10" />
+    <path
+        android:pathData="M650 0A50 50 0 0 1 550 0A50 50 0 0 1 650 0Z"
+        android:fillColor="#C5FBEC"
+        android:strokeMiterLimit="10" />
+    <path
+        android:pathData="M0 50A50 50 0 0 1 -100 50A50 50 0 0 1 0 50Z"
+        android:fillColor="#000000"
+        android:strokeMiterLimit="10" />
+    <path
+        android:pathData="M100 50A50 50 0 0 1 0 50A50 50 0 0 1 100 50Z"
+        android:fillColor="#C9FDE7"
+        android:strokeMiterLimit="10" />
+    <path
+        android:pathData="M200 50A50 50 0 0 1 100 50A50 50 0 0 1 200 50Z"
+        android:fillColor="#CCFFF4"
+        android:strokeMiterLimit="10" />
+    <path
+        android:pathData="M300 50A50 50 0 0 1 200 50A50 50 0 0 1 300 50Z"
+        android:fillColor="#E5FFFF"
+        android:strokeMiterLimit="10" />
+    <path
+        android:pathData="M400 50A50 50 0 0 1 300 50A50 50 0 0 1 400 50Z"
+        android:fillColor="#B6E7FF"
+        android:strokeMiterLimit="10" />
+    <path
+        android:pathData="M500 50A50 50 0 0 1 400 50A50 50 0 0 1 500 50Z"
+        android:fillColor="#ADE5FF"
+        android:strokeMiterLimit="10" />
+    <path
+        android:pathData="M600 50A50 50 0 0 1 500 50A50 50 0 0 1 600 50Z"
+        android:fillColor="#BAF6F7"
+        android:strokeMiterLimit="10" />
+    <path
+        android:pathData="M700 50A50 50 0 0 1 600 50A50 50 0 0 1 700 50Z"
+        android:fillColor="#000000"
+        android:strokeMiterLimit="10" />
+    <path
+        android:pathData="M50 100A50 50 0 0 1 -50 100A50 50 0 0 1 50 100Z"
+        android:fillColor="#C5FBEC"
+        android:strokeMiterLimit="10" />
+    <path
+        android:pathData="M150 100A50 50 0 0 1 50 100A50 50 0 0 1 150 100Z"
+        android:fillColor="#CEFFE1"
+        android:strokeMiterLimit="10" />
+    <path
+        android:pathData="M250 100A50 50 0 0 1 150 100A50 50 0 0 1 250 100Z"
+        android:fillColor="#D5FDFF"
+        android:strokeMiterLimit="10" />
+    <path
+        android:pathData="M350 100A50 50 0 0 1 250 100A50 50 0 0 1 350 100Z"
+        android:fillColor="#CAF2FF"
+        android:strokeMiterLimit="10" />
+    <path
+        android:pathData="M450 100A50 50 0 0 1 350 100A50 50 0 0 1 450 100Z"
+        android:fillColor="#A7DAFF"
+        android:strokeMiterLimit="10" />
+    <path
+        android:pathData="M550 100A50 50 0 0 1 450 100A50 50 0 0 1 550 100Z"
+        android:fillColor="#B8EFFF"
+        android:strokeMiterLimit="10" />
+    <path
+        android:pathData="M650 100A50 50 0 0 1 550 100A50 50 0 0 1 650 100Z"
+        android:fillColor="#C5FBEC"
+        android:strokeMiterLimit="10" />
+    <path
+        android:pathData="M100 150A50 50 0 0 1 0 150A50 50 0 0 1 100 150Z"
+        android:fillColor="#000000"
+        android:strokeMiterLimit="10" />
+    <path
+        android:pathData="M200 150A50 50 0 0 1 100 150A50 50 0 0 1 200 150Z"
+        android:fillColor="#000000"
+        android:strokeMiterLimit="10" />
+    <path
+        android:pathData="M300 150A50 50 0 0 1 200 150A50 50 0 0 1 300 150Z"
+        android:fillColor="#000000"
+        android:strokeMiterLimit="10" />
+    <path
+        android:pathData="M400 150A50 50 0 0 1 300 150A50 50 0 0 1 400 150Z"
+        android:fillColor="#000000"
+        android:strokeMiterLimit="10" />
+    <path
+        android:pathData="M500 150A50 50 0 0 1 400 150A50 50 0 0 1 500 150Z"
+        android:fillColor="#000000"
+        android:strokeMiterLimit="10" />
+    <path
+        android:pathData="M600 150A50 50 0 0 1 500 150A50 50 0 0 1 600 150Z"
+        android:fillColor="#000000"
+        android:strokeMiterLimit="10" />
+</vector>
