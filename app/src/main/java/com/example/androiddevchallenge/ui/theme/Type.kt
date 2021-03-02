@@ -25,34 +25,34 @@ import com.example.androiddevchallenge.R
 
 // Set of Material typography styles to start with
 val Montserrat = FontFamily(
-  Font(R.font.montserrat_alt_regular),
-  Font(R.font.montserrat_alt_light, FontWeight.Light),
-  Font(R.font.montserrat_alt_bold, FontWeight.Bold)
+    Font(R.font.montserrat_alt_regular),
+    Font(R.font.montserrat_alt_light, FontWeight.Light),
+    Font(R.font.montserrat_alt_bold, FontWeight.Bold)
 )
 
 val typography = Typography(
-  defaultFontFamily = Montserrat,
-  h3 = TextStyle(
-    fontWeight = FontWeight.Light,
-  ),
-  h4 = TextStyle(
-    fontWeight = FontWeight.Bold,
-  ),
-  body1 = TextStyle(
-    fontWeight = FontWeight.Normal,
-    fontSize = 16.sp
-  ),
-  button = TextStyle(
-    fontWeight = FontWeight.Normal,
-    fontSize = 14.sp
-  ),
-  caption = TextStyle(
-    fontWeight = FontWeight.Light,
-    fontSize = 12.sp
-  ),
-  body2 = TextStyle(
-    fontWeight = FontWeight.Normal,
-    fontSize = 14.sp
+    defaultFontFamily = Montserrat,
+    h3 = TextStyle(
+        fontWeight = FontWeight.Light,
+    ),
+    h4 = TextStyle(
+        fontWeight = FontWeight.Bold,
+    ),
+    body1 = TextStyle(
+        fontWeight = FontWeight.Normal,
+        fontSize = 16.sp
+    ),
+    button = TextStyle(
+        fontWeight = FontWeight.Normal,
+        fontSize = 14.sp
+    ),
+    caption = TextStyle(
+        fontWeight = FontWeight.Light,
+        fontSize = 12.sp
+    ),
+    body2 = TextStyle(
+        fontWeight = FontWeight.Normal,
+        fontSize = 14.sp
 
-  ),
+    ),
 )

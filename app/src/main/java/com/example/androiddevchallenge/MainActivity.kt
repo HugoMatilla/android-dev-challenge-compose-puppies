@@ -41,63 +41,64 @@ import com.example.androiddevchallenge.ui.ListItem
 import com.example.androiddevchallenge.ui.theme.AppTheme
 
 class MainActivity : AppCompatActivity() {
-  override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(savedInstanceState)
-    setContent {
-      App()
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            App()
+        }
     }
-  }
 
-  // Start building your app here!
-  @Composable
-  fun App() {
-    val darkMode = remember { mutableStateOf(true) }
+    // Start building your app here!
+    @Composable
+    fun App() {
+        val darkMode = remember { mutableStateOf(true) }
 //    AppTheme(darkTheme = darkMode.value) {
-    AppTheme(darkTheme = false) {
-      Scaffold(
-        topBar = {
-          TopAppBar(
-            title = { Text(text = "AdoptMe") },
-            actions = {
-              IconButton(onClick = { darkMode.value = !darkMode.value }) {
-                Icon(Icons.Filled.Brightness4, contentDescription = null)
-              }
-            }
-          )
-        }) { innerPadding -> Content(innerPadding) }
+        AppTheme(darkTheme = false) {
+            Scaffold(
+                topBar = {
+                    TopAppBar(
+                        title = { Text(text = "AdoptMe") },
+                        actions = {
+                            IconButton(onClick = { darkMode.value = !darkMode.value }) {
+                                Icon(Icons.Filled.Brightness4, contentDescription = null)
+                            }
+                        }
+                    )
+                }
+            ) { innerPadding -> Content(innerPadding) }
+        }
     }
-  }
 
-  @Composable
-  fun Content(innerPadding: PaddingValues) {
-    Surface(
-      modifier = Modifier.padding(innerPadding),
-      color = MaterialTheme.colors.background
-    ) {
-      LazyColumn {
+    @Composable
+    fun Content(innerPadding: PaddingValues) {
+        Surface(
+            modifier = Modifier.padding(innerPadding),
+            color = MaterialTheme.colors.background
+        ) {
+            LazyColumn {
 //        item { Text(text = "First item", style = MaterialTheme.typography.h4) }
-        for (dog in dogs)
-          item {
-            ListItem(dog, onClick = { showToast(dog.name) })
-          }
+                for (dog in dogs)
+                    item {
+                        ListItem(dog, onClick = { showToast(dog.name) })
+                    }
 //        item { Text(text = "Last item") }
-      }
+            }
+        }
     }
-  }
 
-  fun showToast(name: String) {
-    DetailActivity.start(this, name)
-    Toast.makeText(this, name, Toast.LENGTH_SHORT).show()
-  }
-
-  //
-  @Preview("Light Theme", widthDp = 360, heightDp = 640)
-  @Composable
-  fun LightPreview() {
-    AppTheme {
-      App()
+    fun showToast(name: String) {
+        DetailActivity.start(this, name)
+        Toast.makeText(this, name, Toast.LENGTH_SHORT).show()
     }
-  }
+
+    //
+    @Preview("Light Theme", widthDp = 360, heightDp = 640)
+    @Composable
+    fun LightPreview() {
+        AppTheme {
+            App()
+        }
+    }
 
 //  @Preview("Dark Theme", widthDp = 360, heightDp = 640)
 //  @Composable
@@ -107,4 +108,3 @@ class MainActivity : AppCompatActivity() {
 //    }
 //  }
 }
-

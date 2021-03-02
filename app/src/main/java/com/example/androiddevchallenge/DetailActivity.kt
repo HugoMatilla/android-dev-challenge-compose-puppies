@@ -31,43 +31,43 @@ import com.example.androiddevchallenge.ui.ListItem
 import com.example.androiddevchallenge.ui.theme.AppTheme
 
 class DetailActivity : AppCompatActivity() {
-  companion object {
-    const val NAME = "Name"
-    fun start(caller: Activity, name: String) {
-      val intent = Intent(caller, this::class.java.declaringClass)
-      intent.putExtra(NAME, name)
-      caller.startActivity(intent)
+    companion object {
+        const val NAME = "Name"
+        fun start(caller: Activity, name: String) {
+            val intent = Intent(caller, this::class.java.declaringClass)
+            intent.putExtra(NAME, name)
+            caller.startActivity(intent)
+        }
     }
-  }
 
-  override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(savedInstanceState)
-    setContent {
-      AppTheme {
-        Detail()
-      }
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            AppTheme {
+                Detail()
+            }
+        }
     }
-  }
 
-  // Start building your app here!
-  @Composable
-  fun Detail() {
-    val dog = dogs.findByName(intent.getStringExtra(NAME) ?: "")
-    Surface(color = MaterialTheme.colors.background) {
-      if (dog != null)
-        ListItem(dog, {})
-      else
-        Text(text = "No dogs with this name")
+    // Start building your app here!
+    @Composable
+    fun Detail() {
+        val dog = dogs.findByName(intent.getStringExtra(NAME) ?: "")
+        Surface(color = MaterialTheme.colors.background) {
+            if (dog != null)
+                ListItem(dog, {})
+            else
+                Text(text = "No dogs with this name")
+        }
     }
-  }
 
-  @Preview("Light Theme", widthDp = 360, heightDp = 640)
-  @Composable
-  fun LightPreview() {
-    AppTheme {
-      Detail()
+    @Preview("Light Theme", widthDp = 360, heightDp = 640)
+    @Composable
+    fun LightPreview() {
+        AppTheme {
+            Detail()
+        }
     }
-  }
 
 //  @Preview("Dark Theme", widthDp = 360, heightDp = 640)
 //  @Composable
@@ -77,4 +77,3 @@ class DetailActivity : AppCompatActivity() {
 //    }
 //  }
 }
-
