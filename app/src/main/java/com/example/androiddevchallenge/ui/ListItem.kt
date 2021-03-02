@@ -65,7 +65,7 @@ fun Chips(dog: Dog) {
     modifier = Modifier
       .fillMaxWidth()
       .padding(start = 100.dp),
-    horizontalArrangement = Arrangement.SpaceBetween
+    horizontalArrangement = Arrangement.SpaceAround
   ) {
     for (top in dog.tops) {
       Chip(top)

@@ -24,7 +24,7 @@ fun Chip(text: String) {
     Text(
       text = text,
       style = MaterialTheme.typography.caption,
-      modifier = Modifier.padding(6.dp),
+      modifier = Modifier.padding(8.dp),
     )
   }
 }

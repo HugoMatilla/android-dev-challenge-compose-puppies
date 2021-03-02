@@ -44,7 +44,7 @@ fun ListItemMessage(title: String, modifier: Modifier = Modifier) {
     text = title,
     style = MaterialTheme.typography.body2,
     modifier = modifier,
-    fontStyle = Italic  
+    fontStyle = Italic
   )
 }
 

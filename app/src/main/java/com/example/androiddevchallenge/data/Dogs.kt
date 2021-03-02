@@ -16,7 +16,7 @@ val kelly =
     "Kelly",
     "Mixed",
     "I love sticks, and i will share my collection with you.",
-    listOf("playful", "affectionate", "athletic", "loyal"),
+    listOf("playful", "affectionate", "athletic"),
     R.drawable.kelly
   )
 
@@ -24,21 +24,21 @@ val jimmy = Dog(
   "Jimmy",
   "Corgy",
   "I'm very sleepy in the morning, I wont get you up for the morning walk.",
-  listOf("chill", "devoted", "mellow", "patient"),
+  listOf("chill", "devoted", "mellow"),
   R.drawable.corgy
 )
 val cati = Dog(
   "Cati",
   "Mixed",
   "I will kiss once I wake up, so be ready for the drool",
-  listOf("quiet", "energetic", "friendly", "intelligent"),
+  listOf("quiet", "energetic", "friendly"),
   R.drawable.cati
 )
 val rocky = Dog(
   "Rocky",
   "German Sheppard",
   "I protect your house but mostly your heart",
-  listOf("loyal", "clean", "clever", "obedient"),
+  listOf("loyal", "clean", "clever"),
   R.drawable.rocky
 )
 
@@ -46,7 +46,7 @@ val mini = Dog(
   "Mini",
   "Dachshund",
   "I might be small in size but my love is at least as big as an elephant",
-  listOf("lovely", "kindhearted", "sensitive", "unique"),
+  listOf("lovely", "kindhearted", "sensitive"),
   R.drawable.mini
 )
 
