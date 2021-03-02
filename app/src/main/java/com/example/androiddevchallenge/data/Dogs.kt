@@ -30,65 +30,41 @@ val kelly =
     Dog(
         "Kelly",
         "Mixed",
-        "I love sticks, and i will share my collection with you.",
-        listOf("playful", "affectionate", "athletic"),
+        "I love sticks, and I will share all my collection with you.",
+        listOf("playful", "affectionate", "athletic", "confident"),
         R.drawable.kelly
     )
 
 val jimmy = Dog(
     "Jimmy",
     "Corgy",
-    "I'm very sleepy in the morning, I wont get you up for the morning walk.",
-    listOf("chill", "devoted", "mellow"),
+    "I'm very sleepy in the morning, so I won't wake you up for the morning walk.",
+    listOf("chill", "devoted", "mellow", "outgoing"),
     R.drawable.corgy
 )
 val cati = Dog(
     "Cati",
-    "Mixed",
-    "I will kiss once I wake up, so be ready for the drool",
-    listOf("quiet", "energetic", "friendly"),
+    "Labrador",
+    "I start kissing once I'm awake, so be ready for the drool in the bed",
+    listOf("quiet", "energetic", "friendly", "affectionate"),
     R.drawable.cati
 )
 val rocky = Dog(
     "Rocky",
-    "German Sheppard",
-    "I protect your house but mostly your heart",
-    listOf("loyal", "clean", "clever"),
+    "German Shepherd",
+    "I will protect your house but most importantly I will protect your heart",
+    listOf("loyal", "clean", "clever", "protective"),
     R.drawable.rocky
 )
 
 val mini = Dog(
     "Mini",
     "Dachshund",
-    "I might be small in size but my love is at least as big as an elephant",
-    listOf("lovely", "kindhearted", "sensitive"),
+    "I might be small in size but my love is at least as big as a Saint Bernard",
+    listOf("lovely", "kindhearted", "sensitive", "attentive"),
     R.drawable.mini
 )
 
-val dogs = listOf<Dog>(kelly, jimmy, cati, rocky, mini)
+val dogs = listOf<Dog>(kelly, jimmy, rocky, mini, cati)
 
 fun List<Dog>.findByName(name: String) = dogs.firstOrNull { name == it.name }
-
-/*
-active
-affectionate
-agile
-athletic
-brave
-bright
-chill
-chubby
-clean
-clever
-devoted
-obedient
-loyal
-mellow
-merry
-patient
-quiet
-energetic
-protective
-friendly
-intelligent
-*/

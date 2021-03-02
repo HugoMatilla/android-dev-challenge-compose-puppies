@@ -53,7 +53,7 @@ fun ListItem(dog: Dog, onClick: () -> Unit = {}) {
             .height(160.dp)
             .fillMaxWidth()
             .padding(8.dp)
-            .shadow(elevation = 4.dp, shape = RoundedCornerShape(8.dp))
+            .shadow(elevation = 8.dp, shape = RoundedCornerShape(8.dp))
             .clip(RoundedCornerShape(8.dp))
             .clickable(onClick = { onClick() })
             .background(MaterialTheme.colors.surface)
@@ -81,7 +81,7 @@ fun Chips(dog: Dog) {
             .padding(start = 100.dp),
         horizontalArrangement = Arrangement.SpaceAround
     ) {
-        for (top in dog.tops) {
+        for (top in dog.tops.subList(0, 3)) {
             Chip(top)
         }
     }
@@ -104,8 +104,8 @@ fun MainContent(dog: Dog) {
                 horizontalArrangement = Arrangement.SpaceBetween,
                 modifier = Modifier.fillMaxWidth()
             ) {
-                ListItemTitle(dog.name)
-                ListItemSubtitle(dog.breed)
+                ListItemTitle(dog.name, modifier = Modifier.alignByBaseline())
+                ListItemSubtitle(dog.breed, modifier = Modifier.alignByBaseline())
             }
             ListItemMessage(dog.message)
         }

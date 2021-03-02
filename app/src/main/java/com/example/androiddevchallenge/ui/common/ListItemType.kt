@@ -39,6 +39,7 @@ fun ListItemTitlePrev() {
 
 @Composable
 fun ListItemSubtitle(title: String, modifier: Modifier = Modifier) {
+
     Text(
         text = title,
         style = MaterialTheme.typography.caption,

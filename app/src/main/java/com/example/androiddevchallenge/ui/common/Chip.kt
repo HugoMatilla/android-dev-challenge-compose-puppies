@@ -16,6 +16,9 @@
 package com.example.androiddevchallenge.ui.common
 
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.MaterialTheme
@@ -29,12 +32,13 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun Chip(text: String) {
     Surface(
-        modifier = Modifier.padding(top = 8.dp, bottom = 8.dp),
-        shape = RoundedCornerShape(12.dp),
+//    modifier = Modifier.padding(top = 8.dp, bottom = 8.dp),
+        shape = RoundedCornerShape(16.dp),
         border = BorderStroke(
             width = 1.dp,
             color = MaterialTheme.colors.primary
-        )
+        ),
+        modifier = Modifier.padding(top = 8.dp, bottom = 8.dp),
     ) {
         Text(
             text = text,
@@ -45,8 +49,26 @@ fun Chip(text: String) {
 }
 //    Icon(Icons.TwoTone.Functions, contentDescription = null)
 
+@Composable
+fun Chips(items: List<String>, modifier: Modifier = Modifier) {
+    Row(
+        modifier = modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.SpaceAround
+    ) {
+        for (item in items) {
+            Chip(item)
+        }
+    }
+}
+
 @Preview
 @Composable
 fun ChipPreview() {
     Chip("Play")
+}
+
+@Preview
+@Composable
+fun ChipsPreview() {
+    Chips(listOf("Play", "Games", "Fun"))
 }

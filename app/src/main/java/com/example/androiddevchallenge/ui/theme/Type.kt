@@ -33,14 +33,15 @@ val Montserrat = FontFamily(
 val typography = Typography(
     defaultFontFamily = Montserrat,
     h3 = TextStyle(
-        fontWeight = FontWeight.Light,
+        fontWeight = FontWeight.Bold,
+        fontSize = 34.sp
     ),
     h4 = TextStyle(
         fontWeight = FontWeight.Bold,
     ),
     body1 = TextStyle(
         fontWeight = FontWeight.Normal,
-        fontSize = 16.sp
+        fontSize = 22.sp
     ),
     button = TextStyle(
         fontWeight = FontWeight.Normal,
