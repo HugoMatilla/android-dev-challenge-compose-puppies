@@ -1,4 +1,4 @@
-# Put title of your app here
+# AdoptMe
 
 ![Workflow result](https://github.com/HugoMatilla/android-dev-challenge-compose-puppies/workflows/Check/badge.svg)
 
