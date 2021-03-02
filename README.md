@@ -1,24 +1,30 @@
 # Put title of your app here
 
-<!--- Replace <OWNER> with your Github Username and <REPOSITORY> with the name of your repository. -->
-<!--- You can find both of these in the url bar when you open your repository in github. -->
-![Workflow result](https://github.com/<OWNER>/<REPOSITORY>/workflows/Check/badge.svg)
-
+![Workflow result](https://github.com/HugoMatilla/android-dev-challenge-compose-puppies/workflows/Check/badge.svg)
 
 ## :scroll: Description
-<!--- Describe your app in one or two sentences -->
 
+Here is AdoptMe, the Online Dogs Shelter Android application.
+
+You can find here our dogs for adoption with their names, breed, main characteristics, and a message they want to share
+with you.
 
 ## :bulb: Motivation and Context
-<!--- Optionally point readers to interesting parts of your submission. -->
-<!--- What are you especially proud of? -->
 
+It was the first application I did in Compose and even if I struggle with the layouts I ended up with something simple
+but catchy.
+
+I like the dogs' avatar in the list and how the chips are moved to the right.
+
+Dark mode is also looking good but what I most proud of is the lovely messages from the dogs.
 
 ## :camera_flash: Screenshots
-<!-- You can add more screenshots here if you like -->
-<img src="/results/screenshot_1.png" width="260">&emsp;<img src="/results/screenshot_2.png" width="260">
+
+<img src="/results/screenshot_1.png" width="260">&emsp;<img src="/results/screenshot_2.png" width="260">&emsp;
+<img src="/results/screenshot_3.png" width="260">&emsp;<img src="/results/screenshot_4.png" width="260">
 
 ## License
+
 ```
 Copyright 2020 The Android Open Source Project
 
